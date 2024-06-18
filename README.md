@@ -5,9 +5,14 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/gerenuk/filament-utc-dts/fix-php-code-styling.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/gerenuk/filament-utc-dts/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/gerenuk/filament-utc-dts.svg?style=flat-square)](https://packagist.org/packages/gerenuk/filament-utc-dts)
 
-
-
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+
+## Version Compatibility
+
+| Plugin | Filament | Laravel | PHP      |
+|--------|----------|---------|----------|
+| 1.x    | 3.x      | 10.x    | 8.x      |
+| 1.x    | 3.x      | 11.x    | 8.2\|8.3 |
 
 ## Installation
 
@@ -15,13 +20,6 @@ You can install the package via composer:
 
 ```bash
 composer require gerenuk/filament-utc-dts
-```
-
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="filament-utc-dts-migrations"
-php artisan migrate
 ```
 
 You can publish the config file with:
@@ -40,14 +38,40 @@ This is the contents of the published config file:
 
 ```php
 return [
+    /*
+     * Whether a border should be shown.
+     */
+    'show_border' => false,
+
+    /*
+     * The format of the datestamp.
+     */
+    'format' => 'd M Hi\Z',
 ];
 ```
 
 ## Usage
 
+You first need to register the plugin with Filament. This can be done inside of your `PanelProvider`, e.g. `AdminPanelProvider`.
+
 ```php
-$filamentUtcDts = new Gerenuk\FilamentUtcDts();
-echo $filamentUtcDts->echoPhrase('Hello, Gerenuk!');
+<?php
+
+namespace App\Providers\Filament;
+
+use Filament\Panel;
+use Filament\PanelProvider;
+use Gerenuk\FilamentUtcDts\FilamentUtcDtsPlugin;
+
+class AdminPanelProvider extends PanelProvider
+{
+    public function panel(Panel $panel): Panel
+    {
+        return $panel
+            // ...
+            ->plugin(FilamentUtcDtsPlugin::make());
+    }
+}
 ```
 
 ## Testing

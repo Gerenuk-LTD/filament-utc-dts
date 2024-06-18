@@ -17,12 +17,11 @@ class FilamentUtcDtsPlugin implements Plugin
     public function register(Panel $panel): void
     {
         $panel->renderHook('panels::global-search.before', function () {
-            $timestamp = Carbon::now()->utc();
-            $formattedTimestamp = config('filament-utc-dts.show_date') ? $timestamp->toDateTimeString() : $timestamp;
+            $timestamp = Carbon::now()->utc()->format(config('filament-utc-dts.date_format'));
 
             return View::make('filament-utc-dts::badge', [
                 'showBorder' => config('filament-utc-dts.show_border'),
-                'datestamp' => $formattedTimestamp,
+                'datestamp' => $timestamp,
             ]);
         });
     }

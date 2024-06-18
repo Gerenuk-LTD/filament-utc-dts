@@ -8,12 +8,7 @@ return [
     'show_border' => false,
 
     /*
-     * Whether a date should be shown alongside the time.
+     * The format of the datestamp.
      */
-    'show_date' => false,
-
-    /*
-     * The format of the date.
-     */
-    'date_format' => 'Y-m-d',
+    'format' => 'd M Hi\Z',
 ];
