@@ -1,29 +1,30 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "gerenuk/filament-utc-dts",
+    "description": "This package adds a UTC time indicator to your filament panel.",
     "keywords": [
-        ":vendor_name",
+        "gerenuk",
         "laravel",
-        ":package_slug"
+        "filament",
+        "utc",
+        "zulu",
+        "filament-utc-dts"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/Gerenuk-LTD/filament-utc-dts",
     "support": {
-        "issues": "https://github.com/:vendor_slug/:package_slug/issues",
-        "source": "https://github.com/:vendor_slug/:package_slug"
+        "issues": "https://github.com/Gerenuk-LTD/filament-utc-dts/issues",
+        "source": "https://github.com/Gerenuk-LTD/filament-utc-dts"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Kieran Proctor",
+            "email": "kieran.lee.proctor@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.1",
         "filament/filament": "^3.0",
-        "filament/forms": "^3.0",
-        "filament/tables": "^3.0",
         "spatie/laravel-package-tools": "^1.15.0"
     },
     "require-dev": {
@@ -41,13 +42,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Gerenuk\\FilamentUtcDts\\": "src/",
+            "Gerenuk\\FilamentUtcDts\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/"
+            "Gerenuk\\FilamentUtcDts\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -67,10 +68,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Gerenuk\\FilamentUtcDts\\FilamentUtcDtsServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "FilamentUtcDts": "Gerenuk\\FilamentUtcDts\\Facades\\FilamentUtcDts"
             }
         }
     },
