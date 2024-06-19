@@ -17,7 +17,7 @@ class FilamentUtcDtsPlugin implements Plugin
     public function register(Panel $panel): void
     {
         $panel->renderHook('panels::global-search.before', function () {
-            $timestamp = Carbon::now()->utc()->format(config('filament-utc-dts.date_format'));
+            $timestamp = Carbon::now()->utc()->format(config('filament-utc-dts.format'));
 
             return View::make('filament-utc-dts::badge', [
                 'showBorder' => config('filament-utc-dts.show_border'),
