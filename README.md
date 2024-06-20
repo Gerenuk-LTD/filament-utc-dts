@@ -1,11 +1,28 @@
-# This is my package filament-utc-dts
+<img src="https://banners.beyondco.de/Filament%20UTC%20DTS.png?theme=light&packageManager=composer+require&packageName=gerenuk%2Ffilament-utc-dts&pattern=brickWall&style=style_1&description=See+UTC+time+in+your+Filament+panel&md=1&showWatermark=0&fontSize=100px&images=clock" alt="Project banner">
+
+# Filament UTC DTS
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/gerenuk/filament-utc-dts.svg?style=flat-square)](https://packagist.org/packages/gerenuk/filament-utc-dts)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/gerenuk/filament-utc-dts/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/gerenuk/filament-utc-dts/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/gerenuk/filament-utc-dts/fix-php-code-styling.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/gerenuk/filament-utc-dts/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/gerenuk-ltd/filament-utc-dts/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/gerenuk-ltd/filament-utc-dts/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/gerenuk-ltd/filament-utc-dts/fix-php-code-styling.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/gerenuk-ltd/filament-utc-dts/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/gerenuk/filament-utc-dts.svg?style=flat-square)](https://packagist.org/packages/gerenuk/filament-utc-dts)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+This package adds a UTC indicator badge to your Filament panel.
+
+## Table of Contents
+1. [Introduction](#filament-utc-dts)
+2. [Version Compatibility](#version-compatibility)
+3. [Installation](#installation)
+4. [Usage](#usage)
+    - [Registering the Plugin](#usage)
+5. [Testing](#testing)
+6. [Screenshots](#screenshots)
+    - [UTC Indicator](#utc-indicator)
+7. [Changelog](#changelog)
+8. [Contributing](#contributing)
+9. [Security Vulnerabilities](#security-vulnerabilities)
+10. [Credits](#credits)
+11. [License](#license)
 
 ## Version Compatibility
 
@@ -39,12 +56,7 @@ This is the contents of the published config file:
 ```php
 return [
     /*
-     * Whether a border should be shown.
-     */
-    'show_border' => false,
-
-    /*
-     * The format of the datestamp.
+     * The Carbon format which should be used to display the UTC timestamp.
      */
     'format' => 'd M Hi\Z',
 ];
@@ -79,6 +91,16 @@ class AdminPanelProvider extends PanelProvider
 ```bash
 composer test
 ```
+
+## Screenshots
+
+### UTC Indicator
+
+![UTC Indicator](https://raw.githubusercontent.com/Gerenuk-LTD/filament-utc-dts/main/screenshots/utc-indicator.png)
+
+### UTC Indicator & Date
+
+![UTC Indicator & Date](https://raw.githubusercontent.com/Gerenuk-LTD/filament-utc-dts/main/screenshots/utc-indicator-date.png)
 
 ## Changelog
 
