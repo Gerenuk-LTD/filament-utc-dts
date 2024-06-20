@@ -20,7 +20,6 @@ class FilamentUtcDtsPlugin implements Plugin
             $timestamp = Carbon::now()->utc()->format(config('filament-utc-dts.format'));
 
             return View::make('filament-utc-dts::badge', [
-                'showBorder' => config('filament-utc-dts.show_border'),
                 'datestamp' => $timestamp,
             ]);
         });
