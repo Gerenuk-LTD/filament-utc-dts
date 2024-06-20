@@ -3,12 +3,7 @@
 // config for Gerenuk/FilamentUtcDts
 return [
     /*
-     * Whether a border should be shown.
-     */
-    'show_border' => false,
-
-    /*
-     * The format of the datestamp.
+     * The Carbon format which should be used to display the UTC timestamp.
      */
     'format' => 'd M Hi\Z',
 ];
