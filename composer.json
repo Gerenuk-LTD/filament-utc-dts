@@ -6,7 +6,7 @@
         "laravel",
         "filament",
         "utc",
-        "zulu",
+        "zulu-time",
         "filament-utc-dts"
     ],
     "homepage": "https://github.com/Gerenuk-LTD/filament-utc-dts",
