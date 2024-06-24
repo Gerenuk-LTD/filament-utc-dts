@@ -96,11 +96,13 @@ composer test
 
 ### UTC Indicator
 
-![UTC Indicator](https://raw.githubusercontent.com/Gerenuk-LTD/filament-utc-dts/main/screenshots/utc-indicator.png)
+![UTC Indicator](https://raw.githubusercontent.com/Gerenuk-LTD/filament-utc-dts/main/.github/resources/utc-indicator-light.png)
+![UTC Indicator](https://raw.githubusercontent.com/Gerenuk-LTD/filament-utc-dts/main/.github/resources/utc-indicator-dark.png)
 
 ### UTC Indicator & Date
 
-![UTC Indicator & Date](https://raw.githubusercontent.com/Gerenuk-LTD/filament-utc-dts/main/screenshots/utc-indicator-date.png)
+![UTC Indicator & Date](https://raw.githubusercontent.com/Gerenuk-LTD/filament-utc-dts/main//.github/resources/utc-indicator-date-light.png)
+![UTC Indicator & Date](https://raw.githubusercontent.com/Gerenuk-LTD/filament-utc-dts/main//.github/resources/utc-indicator-date-dark.png)
 
 ## Changelog
 
