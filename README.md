@@ -4,7 +4,6 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/gerenuk/filament-utc-dts.svg?style=flat-square)](https://packagist.org/packages/gerenuk/filament-utc-dts)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/gerenuk-ltd/filament-utc-dts/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/gerenuk-ltd/filament-utc-dts/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/gerenuk-ltd/filament-utc-dts/fix-php-code-styling.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/gerenuk-ltd/filament-utc-dts/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/gerenuk/filament-utc-dts.svg?style=flat-square)](https://packagist.org/packages/gerenuk/filament-utc-dts)
 
 This package adds a UTC indicator badge to your Filament panel.
@@ -30,6 +29,7 @@ This package adds a UTC indicator badge to your Filament panel.
 |--------|----------|---------|----------|
 | 1.x    | 3.x      | 10.x    | 8.x      |
 | 1.x    | 3.x      | 11.x    | 8.2\|8.3 |
+| 1.x    | 3.x      | 12.x    | 8.4      |
 
 ## Installation
 
