@@ -4,8 +4,8 @@ namespace Gerenuk\FilamentUtcDts;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
-use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\View;
+use Gerenuk\FilamentUtcDts\Livewire\UtcBadge;
+use Livewire\Livewire;
 
 class FilamentUtcDtsPlugin implements Plugin
 {
@@ -16,12 +16,10 @@ class FilamentUtcDtsPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        $panel->renderHook('panels::global-search.before', function () {
-            $timestamp = Carbon::now()->utc()->format(config('filament-utc-dts.format'));
+        Livewire::component('filament-utc-dts::utc-badge', UtcBadge::class);
 
-            return View::make('filament-utc-dts::badge', [
-                'datestamp' => $timestamp,
-            ]);
+        $panel->renderHook('panels::global-search.before', function () {
+            return Livewire::mount('filament-utc-dts::utc-badge');
         });
     }
 
